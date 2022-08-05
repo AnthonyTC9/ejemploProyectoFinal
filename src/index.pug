@@ -1,0 +1,6 @@
+extends layout
+
+block main
+    #gallery
+        each car in carsList
+            +car(car.name, car.image, car.price)
